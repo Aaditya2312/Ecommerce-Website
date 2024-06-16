@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center bg-light vh-100">
+        <form action="signup.php" method="post" class="w-50 bg-warning p-4" onsubmit="return validate()">
+
+            <h4 class="text-center mb-3">Signup Here</h4>
+            <input required class="form-control mt-2" type="text" placeholder="Username" name="username">
+            <input required class="form-control mt-2" type="password" placeholder="Password" name="password1"
+                id="pass1">
+            <input required class="form-control mt-2" type="password" placeholder="Confirm Password" name="password2"
+                id="pass2">
+            <label class="mt-2 ms-0 text-dark" for="role">Choose Role</label>
+            <select required class="form-control" name="role" id="role">
+                <option>Vendor</option>
+                <option>Customer</option>
+            </select>
+
+            <div class="text-center mt-3">
+                <button class="btn btn-success">Signup</button>
+            </div>
+            <div class="text-center mt-2">
+                <a href="login.html" class="text-white">Login Here</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            pass1obj = document.getElementById("pass1");
+            pass2obj = document.getElementById("pass2");
+
+            if (pass1obj.value === pass2obj.value) {
+                return true
+            } else {
+                alert("Password Mismatched")
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid vh-100 d-flex">
+        <div class="row flex-grow-1">
+            <!-- Left Image Section -->
+            <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-white p-0">
+                <img src="https://www.vocso.com/blog/wp-content/uploads/2022/02/eCommerce-Website-Features-1920-x-1080.jpg"
+                    class="img-fluid w-100 h-100" alt="Signup Image" style="object-fit: contain;">
+            </div>
+
+            <!-- Right Form Section -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center login-section">
+                <form action="signup.php" method="post" class="w-75" onsubmit="return validate()">
+                    <h4 class="text-center mb-3">Signup Here</h4>
+                    <div class="mb-3">
+                        <input required class="form-control" type="text" placeholder="Username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <input required class="form-control" type="password" placeholder="Password" name="password1"
+                            id="pass1">
+                    </div>
+                    <div class="mb-3">
+                        <input required class="form-control" type="password" placeholder="Confirm Password"
+                            name="password2" id="pass2">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-dark" for="role">Choose Role</label>
+                        <select required class="form-control" name="role" id="role">
+                            <option>Vendor</option>
+                            <option>Customer</option>
+                        </select>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary">Signup</button>
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="login.html" class="text-dark">Login Here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validate() {
+            var pass1obj = document.getElementById("pass1");
+            var pass2obj = document.getElementById("pass2");
+
+            if (pass1obj.value === pass2obj.value) {
+                return true;
+            } else {
+                alert("Password Mismatched");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
